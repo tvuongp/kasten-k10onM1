@@ -66,3 +66,8 @@ Here is the installation of Kasten K10 running a created backup policy for a Aut
 ![image](https://user-images.githubusercontent.com/20669209/159423709-141e56cb-2f55-4612-8c39-1691f1ea77ca.png)
 
 
+Here is the successful run of the backup policy.
+![image](https://user-images.githubusercontent.com/20669209/159424203-7ea32dc8-58cd-438e-b7b3-d0215c9f3261.png)
+
+
+
