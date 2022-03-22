@@ -6,7 +6,7 @@ Enter. Kasten K10 (https://www.kasten.io)
 * Application Mobility
 
 
-I have created a lab environment on my laptop to support K10. This environment leverages Rancher Desktop https://rancherdesktop.io
+I have created a lab environment on my laptop to support K10. This environment leverages Rancher Desktop https://rancherdesktop.io for the Kubernetes installation.
 
 Rancher Desktop:
 Container Management and Kubernetes on the Desktop
@@ -28,3 +28,31 @@ Rancher Desktop
 Kasten K10
 Homebrew
 Helm - MacOS installation
+
+
+Overview installation:
+1. Install Homebrew 3.4.2  https://brew.sh/2021/02/05/homebrew-3.0.0/
+  * /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+2. Install Helm for MacOS 
+ * **_brew install helm_**
+
+3. Install RancherDesktop
+ * https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.1.1/Rancher.Desktop-1.1.1.aarch64.dmg
+  * Configure Context for Kubernetes
+  * Kubernetes Contexts: rancher-desktop
+  * Configure Resources to allocated to RancherDesktop 
+  * I used 32gb RAM and 6 CPU
+  * ![image](https://user-images.githubusercontent.com/20669209/159422104-8c2a526f-0d03-4c53-8199-460fa710643a.png)
+
+Verify your k3s (kubernets nodes are ready)
+****❯ kubectl get nodes
+NAME                   STATUS   ROLES                  AGE   VERSION
+lima-rancher-desktop   Ready    control-plane,master   44s   v1.22.7+k3s1****
+  
+ 4. Install Kubernees cli for MacOS
+  * **_brew install kubernetes-cli_**
+
+5. Install Kasten K10
+  https://docs.kasten.io/latest/install/other/other.html
+  * curl https://docs.kasten.io/tools/k10_primer.sh | bash
