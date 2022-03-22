@@ -24,10 +24,10 @@ Equipment:
 You might be able to do it with less resources YMMV
 
 Software:
-Rancher Desktop
-Kasten K10
-Homebrew
-Helm - MacOS installation
+* Rancher Desktop (kubernetes via rancher k3s)
+* Kasten K10
+* Homebrew (MacOS package management)
+* Helm - MacOS installation
 
 
 Overview installation:
