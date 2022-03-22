@@ -57,4 +57,12 @@ lima-rancher-desktop   Ready    control-plane,master   44s   v1.22.7+k3s1****
 
 5. Install Kasten K10
   https://docs.kasten.io/latest/install/other/other.html
-  * curl https://docs.kasten.io/tools/k10_primer.sh | bash
+
+_helm install k10 kasten/k10 --namespace=kasten-io_
+
+
+
+Here is the installation of Kasten K10 running a created backup policy for a Auto-Discovered Application. 
+![image](https://user-images.githubusercontent.com/20669209/159423709-141e56cb-2f55-4612-8c39-1691f1ea77ca.png)
+
+
