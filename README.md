@@ -46,6 +46,8 @@ Overview installation:
   * ![image](https://user-images.githubusercontent.com/20669209/159422104-8c2a526f-0d03-4c53-8199-460fa710643a.png)
 
 Verify your k3s (kubernets nodes are ready)
+
+
 ****❯ kubectl get nodes
 NAME                   STATUS   ROLES                  AGE   VERSION
 lima-rancher-desktop   Ready    control-plane,master   44s   v1.22.7+k3s1****
